@@ -41,6 +41,11 @@ expect()->extend('toBeOne', function () {
 |
 */
 
+expect()->extend('toMatchJson', function (array $expectedResult){
+    $this->value = json_decode($this->value, true);
+    return $this->toMatchArray($expectedResult);
+});
+
 function something()
 {
     // ..
