@@ -5,9 +5,9 @@ namespace App\Http;
 class Response
 {
     public function __construct(
-        public string $body,
-        public int $statusCode = 200,
-        public array $headers = []
+        private string $body,
+        private int $statusCode = 200,
+        private iterable $headers = []
     ) {
     }
 
