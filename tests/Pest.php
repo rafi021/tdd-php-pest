@@ -13,7 +13,7 @@ use Tests\ApiTestCase;
 |
 */
 
-// pest()->extend(ApiTestCase::class)->in('Feature');
+pest()->extend(ApiTestCase::class)->in('Feature');
 
 /*
 |--------------------------------------------------------------------------
