@@ -10,7 +10,7 @@ describe('BooksApiTest', function () {
         $response = $this->json(method: 'GET', uri: '/books/1');
 
         // Assert
-        expect($response->getStatus())->toBeInt()->toBe(200)
+        expect($response->getStatusCode())->toBeInt()->toBe(200)
         ->and($response->getBody())->toMatchJson([
             'id' => 1,
             'title' => 'Clean Code: A Handbook of Agile Software Craftsmanship',
